@@ -21,7 +21,7 @@ Token nextToken(FILE *source){
         token.code = FIN;
     }
     /* j'ignore les espaces tabulations et retour ligne */
-    if (current_char == ' ' || current_char == '\n' || current_char == '\t'){
+    while (current_char == ' ' || current_char == '\n' || current_char == '\t'){
         current_char = fgetc(source);
     }
     
