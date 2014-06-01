@@ -9,7 +9,7 @@ int main(){
     fichier = fopen("./test.txt","r");
 
     result = prog(fichier);
-    printf("Résultat exécution : %d",result);
+    printf("Résultat exécution : %d \n",result);
     
     fclose(fichier);
 }
